@@ -12,29 +12,29 @@ public class PhoneBuilder extends ProductBuilder {
     private CPU cpu;
     private RAM ram;
 
-    public PhoneBuilder buildId() {
-        // TODO - implement PhoneBuilder.buildId
-        throw new UnsupportedOperationException();
+    public PhoneBuilder buildId(int ID) {
+        this.ID = ID;
+        return this;
     }
 
-    public PhoneBuilder buildBrand() {
-        // TODO - implement PhoneBuilder.buildBrand
-        throw new UnsupportedOperationException();
+    public PhoneBuilder buildBrand(Brand brand) {
+        this.brand = brand;
+        return this;
     }
 
-    public PhoneBuilder buildCPU() {
-        // TODO - implement PhoneBuilder.buildCPU
-        throw new UnsupportedOperationException();
+    public PhoneBuilder buildCPU(CPU cpu) {
+        this.cpu = cpu;
+        return this;
     }
 
-    public PhoneBuilder buildRAM() {
-        // TODO - implement PhoneBuilder.buildRAM
-        throw new UnsupportedOperationException();
+    public PhoneBuilder buildRAM(RAM ram) {
+        this.ram = ram;
+        return this;
     }
 
-    public product.computer.Computer Build() {
-        // TODO - implement PhoneBuilder.Build
-        throw new UnsupportedOperationException();
+    @Override
+    public Product build() {
+        return new Phone(ID, brand, cpu, ram);
     }
 
 }

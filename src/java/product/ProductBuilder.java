@@ -2,7 +2,7 @@ package product;
 
 import inventory.Supplier;
 
-public class ProductBuilder {
+public abstract class ProductBuilder {
 
     private int ID;
     private String name;
@@ -10,34 +10,34 @@ public class ProductBuilder {
     private Supplier supplier;
     private String type;
 
-    public ProductBuilder buildId() {
-        // TODO - implement ProductBuilder.buildId
-        throw new UnsupportedOperationException();
+    public ProductBuilder buildId(int id) {
+        this.ID = id;
+        return this;
     }
 
-    public ProductBuilder buildName() {
-        // TODO - implement ProductBuilder.buildName
-        throw new UnsupportedOperationException();
+    public ProductBuilder buildName(String name) {
+        this.name = name;
+        return this;
     }
 
-    public ProductBuilder buildDesc() {
-        // TODO - implement ProductBuilder.buildDesc
-        throw new UnsupportedOperationException();
+    public ProductBuilder buildDesc(String description) {
+        this.description = description;
+        return this;
+
     }
 
-    public ProductBuilder buildSupp() {
-        // TODO - implement ProductBuilder.buildSupp
-        throw new UnsupportedOperationException();
+    public ProductBuilder buildSupp(Supplier supplier) {
+        this.supplier = supplier;
+        return this;
+
     }
 
-    public ProductBuilder buildType() {
-        // TODO - implement ProductBuilder.buildType
-        throw new UnsupportedOperationException();
+    public ProductBuilder buildType(String type) {
+        this.type = type;
+        return this;
+
     }
 
-    public Product build() {
-        // TODO - implement ProductBuilder.build
-        throw new UnsupportedOperationException();
-    }
+    public abstract Product build();
 
 }

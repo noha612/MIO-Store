@@ -11,4 +11,15 @@ public class Computer extends Product {
     private String desc;
     private RAM ram;
     private CPU cpu;
+
+    public Computer(int ID, String name, String type, String config, String desc, RAM ram, CPU cpu) {
+        this.ID = ID;
+        this.name = name;
+        this.type = type;
+        this.config = config;
+        this.desc = desc;
+        this.ram = ram;
+        this.cpu = cpu;
+    }
+    
 }

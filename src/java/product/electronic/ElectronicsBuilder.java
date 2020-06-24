@@ -10,29 +10,29 @@ public class ElectronicsBuilder extends ProductBuilder {
     private String type;
     private Brand brand;
 
-    public ElectronicsBuilder buildId() {
-        // TODO - implement ElectronicsBuilder.buildId
-        throw new UnsupportedOperationException();
+    public ElectronicsBuilder buildId(int Id) {
+        this.Id = Id;
+        return this;
     }
 
-    public ElectronicsBuilder buildDesc() {
-        // TODO - implement ElectronicsBuilder.buildDesc
-        throw new UnsupportedOperationException();
+    public ElectronicsBuilder buildDesc(String desc) {
+        this.desc = desc;
+        return this;
     }
 
-    public ElectronicsBuilder buildType() {
-        // TODO - implement ElectronicsBuilder.buildType
-        throw new UnsupportedOperationException();
+    public ElectronicsBuilder buildType(String type) {
+        this.type = type;
+        return this;
     }
 
-    public ElectronicsBuilder buildBrand() {
-        // TODO - implement ElectronicsBuilder.buildBrand
-        throw new UnsupportedOperationException();
+    public ElectronicsBuilder buildBrand(Brand brand) {
+        this.brand = brand;
+        return this;
     }
 
-    public Computer Build() {
-        // TODO - implement ElectronicsBuilder.Build
-        throw new UnsupportedOperationException();
+    @Override
+    public Product build() {
+        return new Electronics(Id, desc, type, brand);
     }
 
 }

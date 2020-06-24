@@ -12,44 +12,44 @@ public class ComputerBuilder extends ProductBuilder {
     private RAM ram;
     private CPU cpu;
 
-    public ComputerBuilder buildId() {
-        // TODO - implement ComputerBuilder.buildId
-        throw new UnsupportedOperationException();
+    public ComputerBuilder buildId(int ID) {
+        this.ID = ID;
+        return this;
     }
 
-    public ComputerBuilder buildName() {
-        // TODO - implement ComputerBuilder.buildName
-        throw new UnsupportedOperationException();
+    public ComputerBuilder buildName(String name) {
+        this.name = name;
+        return this;
     }
 
-    public ComputerBuilder buildType() {
-        // TODO - implement ComputerBuilder.buildType
-        throw new UnsupportedOperationException();
+    public ComputerBuilder buildType(String type) {
+        this.type = type;
+        return this;
     }
 
-    public ComputerBuilder buildConfig() {
-        // TODO - implement ComputerBuilder.buildConfig
-        throw new UnsupportedOperationException();
+    public ComputerBuilder buildConfig(String config) {
+        this.config = config;
+        return this;
     }
 
-    public ComputerBuilder buildDesc() {
-        // TODO - implement ComputerBuilder.buildDesc
-        throw new UnsupportedOperationException();
+    public ComputerBuilder buildDesc(String desc) {
+        this.desc = desc;
+        return this;
     }
 
-    public ComputerBuilder buildRam() {
-        // TODO - implement ComputerBuilder.buildRam
-        throw new UnsupportedOperationException();
+    public ComputerBuilder buildRam(RAM ram) {
+        this.ram = ram;
+        return this;
     }
 
-    public ComputerBuilder buildCPU() {
-        // TODO - implement ComputerBuilder.buildCPU
-        throw new UnsupportedOperationException();
+    public ComputerBuilder buildCPU(CPU cpu) {
+        this.cpu = cpu;
+        return this;
     }
 
-    public Computer Build() {
-        // TODO - implement ComputerBuilder.Build
-        throw new UnsupportedOperationException();
+    @Override
+    public Product build() {
+        return new Computer(ID, name, type, config, desc, ram, cpu);
     }
 
 }

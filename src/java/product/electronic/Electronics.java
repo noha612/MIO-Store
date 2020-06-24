@@ -9,4 +9,11 @@ public class Electronics extends Product {
     private String type;
     private Brand brand;
 
+    public Electronics(int Id, String desc, String type, Brand brand) {
+        this.Id = Id;
+        this.desc = desc;
+        this.type = type;
+        this.brand = brand;
+    }
+
 }

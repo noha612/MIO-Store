@@ -12,4 +12,11 @@ public class Phone extends Product {
     private CPU cpu;
     private RAM ram;
 
+    public Phone(int ID, Brand brand, CPU cpu, RAM ram) {
+        this.ID = ID;
+        this.brand = brand;
+        this.cpu = cpu;
+        this.ram = ram;
+    }
+
 }

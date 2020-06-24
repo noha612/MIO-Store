@@ -10,29 +10,29 @@ public class ClothesBuilder extends ProductBuilder {
     private String sex;
     private Designer designer;
 
-    public ClothesBuilder buildId() {
-        // TODO - implement ClothesBuilder.buildId
-        throw new UnsupportedOperationException();
+    public ClothesBuilder buildId(int ID) {
+        this.ID = ID;
+        return this;
     }
 
-    public ClothesBuilder buildAge() {
-        // TODO - implement ClothesBuilder.buildAge
-        throw new UnsupportedOperationException();
+    public ClothesBuilder buildAge(String age) {
+        this.age = age;
+        return this;
     }
 
-    public ClothesBuilder buildSex() {
-        // TODO - implement ClothesBuilder.buildSex
-        throw new UnsupportedOperationException();
+    public ClothesBuilder buildSex(String sex) {
+        this.sex = sex;
+        return this;
     }
 
-    public ClothesBuilder buildDesigner() {
-        // TODO - implement ClothesBuilder.buildDesigner
-        throw new UnsupportedOperationException();
+    public ClothesBuilder buildDesigner(Designer designer) {
+        this.designer = designer;
+        return this;
     }
 
-    public Computer Build() {
-        // TODO - implement ClothesBuilder.Build
-        throw new UnsupportedOperationException();
+    @Override
+    public Product build() {
+        return new Clothes(ID, age, sex, designer);
     }
 
 }

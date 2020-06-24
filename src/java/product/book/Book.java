@@ -16,4 +16,16 @@ public class Book extends Product {
     private Author author;
     private Publisher publisher;
 
+    public Book(Collection<Wishlist> wishlists, Collection<Category> categories, int ID, String name, String publishYear, Integer quantity, Long purchasePrice, Author author, Publisher publisher) {
+        this.wishlists = wishlists;
+        this.categories = categories;
+        this.ID = ID;
+        this.name = name;
+        this.publishYear = publishYear;
+        this.quantity = quantity;
+        this.purchasePrice = purchasePrice;
+        this.author = author;
+        this.publisher = publisher;
+    }
+
 }
