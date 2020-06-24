@@ -67,5 +67,5 @@ public class ItemBookEntitiy implements Serializable {
     public String toString() {
         return "entities.ItemBookEntitiy[ itemBookEntitiyPK=" + itemBookEntitiyPK + " ]";
     }
-    
+
 }

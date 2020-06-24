@@ -18,7 +18,7 @@ import static repositories.BaseDAO.con;
  *
  * @author os_hoangpn
  */
-public class ContactInforDAOImpl implements ContactinforDAO{
+public class ContactInforDAOImpl implements ContactinforDAO {
 
     @Override
     public List<Contactinfor> getAll() {
@@ -69,13 +69,13 @@ public class ContactInforDAOImpl implements ContactinforDAO{
     public void delete(Contactinfor t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     public static void main(String[] args) {
-        Contactinfor c =new Contactinfor();
+        Contactinfor c = new Contactinfor();
         c.getAddressID().setId(2);
         c.setEmail("fafsa");
         c.setPhoneNumber("fsagsaga");
-        
+
 //        System.out.println(c.getAddressID().getId());
 //        System.out.println(new ContactInforDAOImpl().save(c));
     }

@@ -27,9 +27,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "orderline")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Orderline.findAll", query = "SELECT o FROM Orderline o"),
-    @NamedQuery(name = "Orderline.findById", query = "SELECT o FROM Orderline o WHERE o.id = :id"),
-    @NamedQuery(name = "Orderline.findByQuantity", query = "SELECT o FROM Orderline o WHERE o.quantity = :quantity"),
+    @NamedQuery(name = "Orderline.findAll", query = "SELECT o FROM Orderline o")
+    ,
+    @NamedQuery(name = "Orderline.findById", query = "SELECT o FROM Orderline o WHERE o.id = :id")
+    ,
+    @NamedQuery(name = "Orderline.findByQuantity", query = "SELECT o FROM Orderline o WHERE o.quantity = :quantity")
+    ,
     @NamedQuery(name = "Orderline.findByCutomerID", query = "SELECT o FROM Orderline o WHERE o.cutomerID = :cutomerID")})
 public class Orderline implements Serializable {
 
@@ -122,6 +125,4 @@ public class Orderline implements Serializable {
         return "Orderline{" + "id=" + id + ", quantity=" + quantity + ", cutomerID=" + cutomerID + ", itemID=" + itemID + ", orderID=" + orderID + '}';
     }
 
-
-    
 }

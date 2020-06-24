@@ -30,8 +30,10 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "wishlist")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Wishlist.findAll", query = "SELECT w FROM Wishlist w"),
-    @NamedQuery(name = "Wishlist.findById", query = "SELECT w FROM Wishlist w WHERE w.id = :id"),
+    @NamedQuery(name = "Wishlist.findAll", query = "SELECT w FROM Wishlist w")
+    ,
+    @NamedQuery(name = "Wishlist.findById", query = "SELECT w FROM Wishlist w WHERE w.id = :id")
+    ,
     @NamedQuery(name = "Wishlist.findByBooks", query = "SELECT w FROM Wishlist w WHERE w.books = :books")})
 public class Wishlist implements Serializable {
 
@@ -113,5 +115,5 @@ public class Wishlist implements Serializable {
     public String toString() {
         return "entities.Wishlist[ id=" + id + " ]";
     }
-    
+
 }

@@ -30,10 +30,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "notification")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Notification.findAll", query = "SELECT n FROM Notification n"),
-    @NamedQuery(name = "Notification.findById", query = "SELECT n FROM Notification n WHERE n.id = :id"),
-    @NamedQuery(name = "Notification.findByContent", query = "SELECT n FROM Notification n WHERE n.content = :content"),
-    @NamedQuery(name = "Notification.findByDate", query = "SELECT n FROM Notification n WHERE n.date = :date"),
+    @NamedQuery(name = "Notification.findAll", query = "SELECT n FROM Notification n")
+    ,
+    @NamedQuery(name = "Notification.findById", query = "SELECT n FROM Notification n WHERE n.id = :id")
+    ,
+    @NamedQuery(name = "Notification.findByContent", query = "SELECT n FROM Notification n WHERE n.content = :content")
+    ,
+    @NamedQuery(name = "Notification.findByDate", query = "SELECT n FROM Notification n WHERE n.date = :date")
+    ,
     @NamedQuery(name = "Notification.findByState", query = "SELECT n FROM Notification n WHERE n.state = :state")})
 public class Notification implements Serializable {
 
@@ -125,5 +129,5 @@ public class Notification implements Serializable {
     public String toString() {
         return "entities.Notification[ id=" + id + " ]";
     }
-    
+
 }

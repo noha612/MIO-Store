@@ -34,12 +34,18 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "book")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Book.findAll", query = "SELECT b FROM Book b"),
-    @NamedQuery(name = "Book.findById", query = "SELECT b FROM Book b WHERE b.id = :id"),
-    @NamedQuery(name = "Book.findByName", query = "SELECT b FROM Book b WHERE b.name = :name"),
-    @NamedQuery(name = "Book.findByPublishYear", query = "SELECT b FROM Book b WHERE b.publishYear = :publishYear"),
-    @NamedQuery(name = "Book.findByQuantity", query = "SELECT b FROM Book b WHERE b.quantity = :quantity"),
-    @NamedQuery(name = "Book.findByPurchasePrice", query = "SELECT b FROM Book b WHERE b.purchasePrice = :purchasePrice"),
+    @NamedQuery(name = "Book.findAll", query = "SELECT b FROM Book b")
+    ,
+    @NamedQuery(name = "Book.findById", query = "SELECT b FROM Book b WHERE b.id = :id")
+    ,
+    @NamedQuery(name = "Book.findByName", query = "SELECT b FROM Book b WHERE b.name = :name")
+    ,
+    @NamedQuery(name = "Book.findByPublishYear", query = "SELECT b FROM Book b WHERE b.publishYear = :publishYear")
+    ,
+    @NamedQuery(name = "Book.findByQuantity", query = "SELECT b FROM Book b WHERE b.quantity = :quantity")
+    ,
+    @NamedQuery(name = "Book.findByPurchasePrice", query = "SELECT b FROM Book b WHERE b.purchasePrice = :purchasePrice")
+    ,
     @NamedQuery(name = "Book.findByCategories", query = "SELECT b FROM Book b WHERE b.categories = :categories")})
 public class Book implements Serializable {
 
@@ -214,5 +220,5 @@ public class Book implements Serializable {
     public String toString() {
         return "entities.Book[ id=" + id + " ]";
     }
-    
+
 }

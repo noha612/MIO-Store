@@ -29,10 +29,14 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "shipping")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Shipping.findAll", query = "SELECT s FROM Shipping s"),
-    @NamedQuery(name = "Shipping.findById", query = "SELECT s FROM Shipping s WHERE s.id = :id"),
-    @NamedQuery(name = "Shipping.findByRegion", query = "SELECT s FROM Shipping s WHERE s.region = :region"),
-    @NamedQuery(name = "Shipping.findByCost", query = "SELECT s FROM Shipping s WHERE s.cost = :cost"),
+    @NamedQuery(name = "Shipping.findAll", query = "SELECT s FROM Shipping s")
+    ,
+    @NamedQuery(name = "Shipping.findById", query = "SELECT s FROM Shipping s WHERE s.id = :id")
+    ,
+    @NamedQuery(name = "Shipping.findByRegion", query = "SELECT s FROM Shipping s WHERE s.region = :region")
+    ,
+    @NamedQuery(name = "Shipping.findByCost", query = "SELECT s FROM Shipping s WHERE s.cost = :cost")
+    ,
     @NamedQuery(name = "Shipping.findByDelayDate", query = "SELECT s FROM Shipping s WHERE s.delayDate = :delayDate")})
 public class Shipping implements Serializable {
 
@@ -123,5 +127,5 @@ public class Shipping implements Serializable {
     public String toString() {
         return "entities.Shipping[ id=" + id + " ]";
     }
-    
+
 }

@@ -77,5 +77,5 @@ public class ManagerEntitiy implements Serializable {
     public String toString() {
         return "entities.ManagerEntitiy[ personID=" + personID + " ]";
     }
-    
+
 }

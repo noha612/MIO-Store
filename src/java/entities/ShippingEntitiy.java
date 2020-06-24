@@ -100,5 +100,5 @@ public class ShippingEntitiy implements Serializable {
     public String toString() {
         return "entities.ShippingEntitiy[ id=" + id + " ]";
     }
-    
+
 }

@@ -80,5 +80,5 @@ public class BillEntitiy implements Serializable {
     public String toString() {
         return "entities.BillEntitiy[ id=" + id + " ]";
     }
-    
+
 }

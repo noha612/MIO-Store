@@ -31,8 +31,10 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "cart")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Cart.findAll", query = "SELECT c FROM Cart c"),
-    @NamedQuery(name = "Cart.findById", query = "SELECT c FROM Cart c WHERE c.id = :id"),
+    @NamedQuery(name = "Cart.findAll", query = "SELECT c FROM Cart c")
+    ,
+    @NamedQuery(name = "Cart.findById", query = "SELECT c FROM Cart c WHERE c.id = :id")
+    ,
     @NamedQuery(name = "Cart.findByItems", query = "SELECT c FROM Cart c WHERE c.items = :items")})
 public class Cart implements Serializable {
 
@@ -148,5 +150,5 @@ public class Cart implements Serializable {
     public void setItemID(Item itemID) {
         this.itemID = itemID;
     }
-    
+
 }

@@ -5,24 +5,24 @@ import java.util.*;
 
 public class ImportingStaff extends Employee {
 
-	Collection<ImportingRecord> importingRecords;
-	private String productType;
+    Collection<ImportingRecord> importingRecords;
+    private String productType;
 
-	public String getProductType() {
-		return this.productType;
-	}
+    public String getProductType() {
+        return this.productType;
+    }
 
-	/**
-	 * 
-	 * @param productType
-	 */
-	public void setProductType(String productType) {
-		this.productType = productType;
-	}
+    /**
+     *
+     * @param productType
+     */
+    public void setProductType(String productType) {
+        this.productType = productType;
+    }
 
-	public ImportingStaff() {
-		// TODO - implement ImportingStaff.ImportingStaff
-		throw new UnsupportedOperationException();
-	}
+    public ImportingStaff() {
+        // TODO - implement ImportingStaff.ImportingStaff
+        throw new UnsupportedOperationException();
+    }
 
 }

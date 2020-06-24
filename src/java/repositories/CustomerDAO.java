@@ -11,6 +11,6 @@ import entities.Customer;
  *
  * @author os_hoangpn
  */
-public interface CustomerDAO extends BaseDAO<Customer>{
-    
+public interface CustomerDAO extends BaseDAO<Customer> {
+
 }

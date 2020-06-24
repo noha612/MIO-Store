@@ -25,7 +25,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "cash")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Cash.findAll", query = "SELECT c FROM Cash c"),
+    @NamedQuery(name = "Cash.findAll", query = "SELECT c FROM Cash c")
+    ,
     @NamedQuery(name = "Cash.findByPaymentID", query = "SELECT c FROM Cash c WHERE c.paymentID = :paymentID")})
 public class Cash implements Serializable {
 
@@ -85,5 +86,5 @@ public class Cash implements Serializable {
     public String toString() {
         return "entities.Cash[ paymentID=" + paymentID + " ]";
     }
-    
+
 }

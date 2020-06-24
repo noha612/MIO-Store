@@ -29,11 +29,16 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "address")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Address.findAll", query = "SELECT a FROM Address a"),
-    @NamedQuery(name = "Address.findById", query = "SELECT a FROM Address a WHERE a.id = :id"),
-    @NamedQuery(name = "Address.findByCity", query = "SELECT a FROM Address a WHERE a.city = :city"),
-    @NamedQuery(name = "Address.findByDistrict", query = "SELECT a FROM Address a WHERE a.district = :district"),
-    @NamedQuery(name = "Address.findByTown", query = "SELECT a FROM Address a WHERE a.town = :town"),
+    @NamedQuery(name = "Address.findAll", query = "SELECT a FROM Address a")
+    ,
+    @NamedQuery(name = "Address.findById", query = "SELECT a FROM Address a WHERE a.id = :id")
+    ,
+    @NamedQuery(name = "Address.findByCity", query = "SELECT a FROM Address a WHERE a.city = :city")
+    ,
+    @NamedQuery(name = "Address.findByDistrict", query = "SELECT a FROM Address a WHERE a.district = :district")
+    ,
+    @NamedQuery(name = "Address.findByTown", query = "SELECT a FROM Address a WHERE a.town = :town")
+    ,
     @NamedQuery(name = "Address.findByDescription", query = "SELECT a FROM Address a WHERE a.description = :description")})
 public class Address implements Serializable {
 
@@ -149,7 +154,6 @@ public class Address implements Serializable {
         return "Address{" + "shippingaddressList=" + shippingaddressList + ", id=" + id + ", city=" + city + ", district=" + district + ", town=" + town + ", description=" + description + ", branchstoreList=" + branchstoreList + ", contactinforList=" + contactinforList + '}';
     }
 
-
     @XmlTransient
     public List<Shippingaddress> getShippingaddressList() {
         return shippingaddressList;
@@ -158,5 +162,5 @@ public class Address implements Serializable {
     public void setShippingaddressList(List<Shippingaddress> shippingaddressList) {
         this.shippingaddressList = shippingaddressList;
     }
-    
+
 }

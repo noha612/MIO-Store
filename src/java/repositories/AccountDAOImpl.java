@@ -111,6 +111,7 @@ public class AccountDAOImpl implements AccountDAO {
             return false;
         }
     }
+
     public static void main(String[] args) {
         System.out.println(new AccountDAOImpl().checkUsernameExist("kh001"));
     }

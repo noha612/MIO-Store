@@ -129,5 +129,5 @@ public class PromotionEntitiy implements Serializable {
     public String toString() {
         return "entities.PromotionEntitiy[ id=" + id + " ]";
     }
-    
+
 }

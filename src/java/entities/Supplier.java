@@ -29,8 +29,10 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "supplier")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Supplier.findAll", query = "SELECT s FROM Supplier s"),
-    @NamedQuery(name = "Supplier.findById", query = "SELECT s FROM Supplier s WHERE s.id = :id"),
+    @NamedQuery(name = "Supplier.findAll", query = "SELECT s FROM Supplier s")
+    ,
+    @NamedQuery(name = "Supplier.findById", query = "SELECT s FROM Supplier s WHERE s.id = :id")
+    ,
     @NamedQuery(name = "Supplier.findByName", query = "SELECT s FROM Supplier s WHERE s.name = :name")})
 public class Supplier implements Serializable {
 
@@ -101,5 +103,5 @@ public class Supplier implements Serializable {
     public String toString() {
         return "entities.Supplier[ id=" + id + " ]";
     }
-    
+
 }

@@ -21,7 +21,7 @@ import static repositories.BaseDAO.con;
  *
  * @author os_hoangpn
  */
-public class OrderlineDAOImpl implements OrderlineDAO{
+public class OrderlineDAOImpl implements OrderlineDAO {
 
     @Override
     public List<Orderline> getAll() {
@@ -57,7 +57,7 @@ public class OrderlineDAOImpl implements OrderlineDAO{
         }
         return list;
     }
-    
+
     @Override
     public int save(Orderline t) {
         System.out.println(t);
@@ -85,7 +85,8 @@ public class OrderlineDAOImpl implements OrderlineDAO{
         } catch (SQLException ex) {
             return key;
         }
-        return key;}
+        return key;
+    }
 
     @Override
     public void update(Orderline t) {
@@ -96,7 +97,7 @@ public class OrderlineDAOImpl implements OrderlineDAO{
     public void delete(Orderline t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     public static void main(String[] args) {
         System.out.println(new OrderlineDAOImpl().getOrderLinesByOrderId(1));
     }

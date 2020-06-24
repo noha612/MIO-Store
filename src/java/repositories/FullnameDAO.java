@@ -11,6 +11,6 @@ import entities.Fullname;
  *
  * @author os_hoangpn
  */
-public interface FullnameDAO extends BaseDAO<Fullname>{
-    
+public interface FullnameDAO extends BaseDAO<Fullname> {
+
 }

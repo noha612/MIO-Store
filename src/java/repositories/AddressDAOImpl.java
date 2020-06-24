@@ -18,7 +18,7 @@ import static repositories.BaseDAO.con;
  *
  * @author os_hoangpn
  */
-public class AddressDAOImpl implements AddressDAO{
+public class AddressDAOImpl implements AddressDAO {
 
     @Override
     public List<Address> getAll() {
@@ -70,5 +70,5 @@ public class AddressDAOImpl implements AddressDAO{
     public void delete(Address t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

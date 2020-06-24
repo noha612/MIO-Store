@@ -2,8 +2,8 @@ package customer;
 
 public interface CustomerDAO {
 
-	void creat();
+    void creat();
 
-	void update();
+    void update();
 
 }

@@ -32,9 +32,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "order")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Order1.findAll", query = "SELECT o FROM Order1 o"),
-    @NamedQuery(name = "Order1.findById", query = "SELECT o FROM Order1 o WHERE o.id = :id"),
-    @NamedQuery(name = "Order1.findByType", query = "SELECT o FROM Order1 o WHERE o.type = :type"),
+    @NamedQuery(name = "Order1.findAll", query = "SELECT o FROM Order1 o")
+    ,
+    @NamedQuery(name = "Order1.findById", query = "SELECT o FROM Order1 o WHERE o.id = :id")
+    ,
+    @NamedQuery(name = "Order1.findByType", query = "SELECT o FROM Order1 o WHERE o.type = :type")
+    ,
     @NamedQuery(name = "Order1.findByDate", query = "SELECT o FROM Order1 o WHERE o.date = :date")})
 public class Order1 implements Serializable {
 
@@ -136,5 +139,5 @@ public class Order1 implements Serializable {
     public String toString() {
         return "entities.Order1[ id=" + id + " ]";
     }
-    
+
 }

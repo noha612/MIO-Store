@@ -90,5 +90,5 @@ public class MembershiptypeEntitiy implements Serializable {
     public String toString() {
         return "entities.MembershiptypeEntitiy[ id=" + id + " ]";
     }
-    
+
 }

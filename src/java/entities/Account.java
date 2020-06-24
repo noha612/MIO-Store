@@ -29,10 +29,14 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "account")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Account.findAll", query = "SELECT a FROM Account a"),
-    @NamedQuery(name = "Account.findById", query = "SELECT a FROM Account a WHERE a.id = :id"),
-    @NamedQuery(name = "Account.findByUsername", query = "SELECT a FROM Account a WHERE a.username = :username"),
-    @NamedQuery(name = "Account.findByPassword", query = "SELECT a FROM Account a WHERE a.password = :password"),
+    @NamedQuery(name = "Account.findAll", query = "SELECT a FROM Account a")
+    ,
+    @NamedQuery(name = "Account.findById", query = "SELECT a FROM Account a WHERE a.id = :id")
+    ,
+    @NamedQuery(name = "Account.findByUsername", query = "SELECT a FROM Account a WHERE a.username = :username")
+    ,
+    @NamedQuery(name = "Account.findByPassword", query = "SELECT a FROM Account a WHERE a.password = :password")
+    ,
     @NamedQuery(name = "Account.findByRole", query = "SELECT a FROM Account a WHERE a.role = :role")})
 public class Account implements Serializable {
 
@@ -123,5 +127,5 @@ public class Account implements Serializable {
     public String toString() {
         return "entities.Account[ id=" + id + " ]";
     }
-    
+
 }

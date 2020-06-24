@@ -29,10 +29,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "person")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Person.findAll", query = "SELECT p FROM Person p"),
-    @NamedQuery(name = "Person.findById", query = "SELECT p FROM Person p WHERE p.id = :id"),
-    @NamedQuery(name = "Person.findByDateOfBirth", query = "SELECT p FROM Person p WHERE p.dateOfBirth = :dateOfBirth"),
-    @NamedQuery(name = "Person.findByGender", query = "SELECT p FROM Person p WHERE p.gender = :gender"),
+    @NamedQuery(name = "Person.findAll", query = "SELECT p FROM Person p")
+    ,
+    @NamedQuery(name = "Person.findById", query = "SELECT p FROM Person p WHERE p.id = :id")
+    ,
+    @NamedQuery(name = "Person.findByDateOfBirth", query = "SELECT p FROM Person p WHERE p.dateOfBirth = :dateOfBirth")
+    ,
+    @NamedQuery(name = "Person.findByGender", query = "SELECT p FROM Person p WHERE p.gender = :gender")
+    ,
     @NamedQuery(name = "Person.findByIdCard", query = "SELECT p FROM Person p WHERE p.idCard = :idCard")})
 public class Person implements Serializable {
 
@@ -226,6 +230,4 @@ public class Person implements Serializable {
         return "Person{" + "id=" + id + ", dateOfBirth=" + dateOfBirth + ", gender=" + gender + ", idCard=" + idCard + ", seller=" + seller + ", employee=" + employee + ", customercarestaff=" + customercarestaff + ", onsiteseller=" + onsiteseller + ", importingstaff=" + importingstaff + ", manager=" + manager + ", accountID=" + accountID + ", contactInforID=" + contactInforID + ", fullNameID=" + fullNameID + ", onlineseller=" + onlineseller + ", customer=" + customer + '}';
     }
 
-    
-    
 }

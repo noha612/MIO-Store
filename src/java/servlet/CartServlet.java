@@ -82,7 +82,7 @@ public class CartServlet extends HttpServlet {
         if (request.getParameter("CustomerID").equals("null")) {
 //            System.out.println("ok");
             response.sendRedirect("login.jsp");
-        
+
         } else {
             customerID = Integer.parseInt(cusID);
             CustomerDAOImpl customerDAOImpl = new CustomerDAOImpl();

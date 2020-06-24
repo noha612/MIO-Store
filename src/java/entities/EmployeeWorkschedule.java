@@ -30,9 +30,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "employee_workschedule")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "EmployeeWorkschedule.findAll", query = "SELECT e FROM EmployeeWorkschedule e"),
-    @NamedQuery(name = "EmployeeWorkschedule.findById", query = "SELECT e FROM EmployeeWorkschedule e WHERE e.id = :id"),
-    @NamedQuery(name = "EmployeeWorkschedule.findByShift", query = "SELECT e FROM EmployeeWorkschedule e WHERE e.shift = :shift"),
+    @NamedQuery(name = "EmployeeWorkschedule.findAll", query = "SELECT e FROM EmployeeWorkschedule e")
+    ,
+    @NamedQuery(name = "EmployeeWorkschedule.findById", query = "SELECT e FROM EmployeeWorkschedule e WHERE e.id = :id")
+    ,
+    @NamedQuery(name = "EmployeeWorkschedule.findByShift", query = "SELECT e FROM EmployeeWorkschedule e WHERE e.shift = :shift")
+    ,
     @NamedQuery(name = "EmployeeWorkschedule.findByDate", query = "SELECT e FROM EmployeeWorkschedule e WHERE e.date = :date")})
 public class EmployeeWorkschedule implements Serializable {
 
@@ -125,5 +128,5 @@ public class EmployeeWorkschedule implements Serializable {
     public String toString() {
         return "entities.EmployeeWorkschedule[ id=" + id + " ]";
     }
-    
+
 }

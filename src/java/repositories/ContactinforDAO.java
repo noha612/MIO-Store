@@ -11,6 +11,6 @@ import entities.Contactinfor;
  *
  * @author os_hoangpn
  */
-public interface ContactinforDAO  extends BaseDAO<Contactinfor>{
-    
+public interface ContactinforDAO extends BaseDAO<Contactinfor> {
+
 }

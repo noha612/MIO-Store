@@ -28,10 +28,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "allowance")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Allowance.findAll", query = "SELECT a FROM Allowance a"),
-    @NamedQuery(name = "Allowance.findById", query = "SELECT a FROM Allowance a WHERE a.id = :id"),
-    @NamedQuery(name = "Allowance.findByName", query = "SELECT a FROM Allowance a WHERE a.name = :name"),
-    @NamedQuery(name = "Allowance.findByAmount", query = "SELECT a FROM Allowance a WHERE a.amount = :amount"),
+    @NamedQuery(name = "Allowance.findAll", query = "SELECT a FROM Allowance a")
+    ,
+    @NamedQuery(name = "Allowance.findById", query = "SELECT a FROM Allowance a WHERE a.id = :id")
+    ,
+    @NamedQuery(name = "Allowance.findByName", query = "SELECT a FROM Allowance a WHERE a.name = :name")
+    ,
+    @NamedQuery(name = "Allowance.findByAmount", query = "SELECT a FROM Allowance a WHERE a.amount = :amount")
+    ,
     @NamedQuery(name = "Allowance.findByDescription", query = "SELECT a FROM Allowance a WHERE a.description = :description")})
 public class Allowance implements Serializable {
 
@@ -122,5 +126,5 @@ public class Allowance implements Serializable {
     public String toString() {
         return "entities.Allowance[ id=" + id + " ]";
     }
-    
+
 }

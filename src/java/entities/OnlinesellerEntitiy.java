@@ -83,5 +83,5 @@ public class OnlinesellerEntitiy implements Serializable {
     public String toString() {
         return "entities.OnlinesellerEntitiy[ personID=" + personID + " ]";
     }
-    
+
 }

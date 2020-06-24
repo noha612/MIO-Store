@@ -31,8 +31,10 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "shippingaddress")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Shippingaddress.findAll", query = "SELECT s FROM Shippingaddress s"),
-    @NamedQuery(name = "Shippingaddress.findById", query = "SELECT s FROM Shippingaddress s WHERE s.id = :id"),
+    @NamedQuery(name = "Shippingaddress.findAll", query = "SELECT s FROM Shippingaddress s")
+    ,
+    @NamedQuery(name = "Shippingaddress.findById", query = "SELECT s FROM Shippingaddress s WHERE s.id = :id")
+    ,
     @NamedQuery(name = "Shippingaddress.findByNote", query = "SELECT s FROM Shippingaddress s WHERE s.note = :note")})
 public class Shippingaddress implements Serializable {
 
@@ -107,8 +109,6 @@ public class Shippingaddress implements Serializable {
         return "Shippingaddress{" + "onlineorderList=" + onlineorderList + ", id=" + id + ", note=" + note + ", addressID=" + addressID + '}';
     }
 
-
-
     @XmlTransient
     public List<Onlineorder> getOnlineorderList() {
         return onlineorderList;
@@ -117,5 +117,5 @@ public class Shippingaddress implements Serializable {
     public void setOnlineorderList(List<Onlineorder> onlineorderList) {
         this.onlineorderList = onlineorderList;
     }
-    
+
 }

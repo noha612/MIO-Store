@@ -29,10 +29,14 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "workschedule")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Workschedule.findAll", query = "SELECT w FROM Workschedule w"),
-    @NamedQuery(name = "Workschedule.findById", query = "SELECT w FROM Workschedule w WHERE w.id = :id"),
-    @NamedQuery(name = "Workschedule.findByMonth", query = "SELECT w FROM Workschedule w WHERE w.month = :month"),
-    @NamedQuery(name = "Workschedule.findByYear", query = "SELECT w FROM Workschedule w WHERE w.year = :year"),
+    @NamedQuery(name = "Workschedule.findAll", query = "SELECT w FROM Workschedule w")
+    ,
+    @NamedQuery(name = "Workschedule.findById", query = "SELECT w FROM Workschedule w WHERE w.id = :id")
+    ,
+    @NamedQuery(name = "Workschedule.findByMonth", query = "SELECT w FROM Workschedule w WHERE w.month = :month")
+    ,
+    @NamedQuery(name = "Workschedule.findByYear", query = "SELECT w FROM Workschedule w WHERE w.year = :year")
+    ,
     @NamedQuery(name = "Workschedule.findByEmployeeWorkSchedules", query = "SELECT w FROM Workschedule w WHERE w.employeeWorkSchedules = :employeeWorkSchedules")})
 public class Workschedule implements Serializable {
 
@@ -123,5 +127,5 @@ public class Workschedule implements Serializable {
     public String toString() {
         return "entities.Workschedule[ id=" + id + " ]";
     }
-    
+
 }

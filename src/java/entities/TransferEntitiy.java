@@ -67,5 +67,5 @@ public class TransferEntitiy implements Serializable {
     public String toString() {
         return "entities.TransferEntitiy[ paymentID=" + paymentID + " ]";
     }
-    
+
 }

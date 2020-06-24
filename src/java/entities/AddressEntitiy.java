@@ -110,5 +110,5 @@ public class AddressEntitiy implements Serializable {
     public String toString() {
         return "entities.AddressEntitiy[ id=" + id + " ]";
     }
-    
+
 }

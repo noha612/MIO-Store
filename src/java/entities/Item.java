@@ -30,14 +30,22 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "item")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Item.findAll", query = "SELECT i FROM Item i"),
-    @NamedQuery(name = "Item.findById", query = "SELECT i FROM Item i WHERE i.id = :id"),
-    @NamedQuery(name = "Item.findByName", query = "SELECT i FROM Item i WHERE i.name = :name"),
-    @NamedQuery(name = "Item.findBySalePrice", query = "SELECT i FROM Item i WHERE i.salePrice = :salePrice"),
-    @NamedQuery(name = "Item.findByDescription", query = "SELECT i FROM Item i WHERE i.description = :description"),
-    @NamedQuery(name = "Item.findByPromotions", query = "SELECT i FROM Item i WHERE i.promotions = :promotions"),
-    @NamedQuery(name = "Item.findByFeedbacks", query = "SELECT i FROM Item i WHERE i.feedbacks = :feedbacks"),
-    @NamedQuery(name = "Item.findByBooks", query = "SELECT i FROM Item i WHERE i.books = :books"),
+    @NamedQuery(name = "Item.findAll", query = "SELECT i FROM Item i")
+    ,
+    @NamedQuery(name = "Item.findById", query = "SELECT i FROM Item i WHERE i.id = :id")
+    ,
+    @NamedQuery(name = "Item.findByName", query = "SELECT i FROM Item i WHERE i.name = :name")
+    ,
+    @NamedQuery(name = "Item.findBySalePrice", query = "SELECT i FROM Item i WHERE i.salePrice = :salePrice")
+    ,
+    @NamedQuery(name = "Item.findByDescription", query = "SELECT i FROM Item i WHERE i.description = :description")
+    ,
+    @NamedQuery(name = "Item.findByPromotions", query = "SELECT i FROM Item i WHERE i.promotions = :promotions")
+    ,
+    @NamedQuery(name = "Item.findByFeedbacks", query = "SELECT i FROM Item i WHERE i.feedbacks = :feedbacks")
+    ,
+    @NamedQuery(name = "Item.findByBooks", query = "SELECT i FROM Item i WHERE i.books = :books")
+    ,
     @NamedQuery(name = "Item.findByUrl", query = "SELECT i FROM Item i WHERE i.url = :url")})
 public class Item implements Serializable {
 
@@ -180,5 +188,5 @@ public class Item implements Serializable {
     public void setOrderlineList(List<Orderline> orderlineList) {
         this.orderlineList = orderlineList;
     }
-    
+
 }

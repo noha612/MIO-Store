@@ -67,5 +67,5 @@ public class SellerEntitiy implements Serializable {
     public String toString() {
         return "entities.SellerEntitiy[ personID=" + personID + " ]";
     }
-    
+
 }

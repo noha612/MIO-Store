@@ -142,5 +142,5 @@ public class FeedbackEntitiy implements Serializable {
     public String toString() {
         return "entities.FeedbackEntitiy[ id=" + id + " ]";
     }
-    
+
 }

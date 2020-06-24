@@ -5,7 +5,6 @@
  */
 package repositories;
 
-
 import entities.Item;
 import entities.Onlineorder;
 import java.util.List;
@@ -14,6 +13,7 @@ import java.util.List;
  *
  * @author os_hoangpn
  */
-public interface OnlineOrderDAO extends BaseDAO<Onlineorder>{
+public interface OnlineOrderDAO extends BaseDAO<Onlineorder> {
+
     int addItemsToOrder(List<Item> items, int orderID);
 }

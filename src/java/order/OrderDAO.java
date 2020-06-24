@@ -2,14 +2,14 @@ package order;
 
 public interface OrderDAO {
 
-	void add();
+    void add();
 
-	void delete();
+    void delete();
 
-	void update();
+    void update();
 
-	void getById();
+    void getById();
 
-	void getListByName();
+    void getListByName();
 
 }

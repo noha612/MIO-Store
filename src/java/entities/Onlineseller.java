@@ -26,7 +26,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "onlineseller")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Onlineseller.findAll", query = "SELECT o FROM Onlineseller o"),
+    @NamedQuery(name = "Onlineseller.findAll", query = "SELECT o FROM Onlineseller o")
+    ,
     @NamedQuery(name = "Onlineseller.findByPersonID", query = "SELECT o FROM Onlineseller o WHERE o.personID = :personID")})
 public class Onlineseller implements Serializable {
 
@@ -97,5 +98,5 @@ public class Onlineseller implements Serializable {
     public String toString() {
         return "entities.Onlineseller[ personID=" + personID + " ]";
     }
-    
+
 }

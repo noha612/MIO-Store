@@ -11,6 +11,7 @@ import entities.Person;
  *
  * @author os_hoangpn
  */
-public interface PersonDAO extends BaseDAO<Person>{
-   Person getPersonByAccountID(int id);
+public interface PersonDAO extends BaseDAO<Person> {
+
+    Person getPersonByAccountID(int id);
 }

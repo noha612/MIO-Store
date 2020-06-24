@@ -132,5 +132,5 @@ public class PostEntitiy implements Serializable {
     public String toString() {
         return "entities.PostEntitiy[ id=" + id + " ]";
     }
-    
+
 }

@@ -108,5 +108,5 @@ public class RamEntitiy implements Serializable {
     public String toString() {
         return "entities.RamEntitiy[ id2=" + id2 + " ]";
     }
-    
+
 }

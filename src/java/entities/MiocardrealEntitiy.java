@@ -91,5 +91,5 @@ public class MiocardrealEntitiy implements Serializable {
     public String toString() {
         return "entities.MiocardrealEntitiy[ id=" + id + " ]";
     }
-    
+
 }

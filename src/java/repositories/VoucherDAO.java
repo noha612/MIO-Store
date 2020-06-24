@@ -11,6 +11,6 @@ import entities.Voucher;
  *
  * @author os_hoangpn
  */
-public interface VoucherDAO extends BaseDAO<Voucher>{
-    
+public interface VoucherDAO extends BaseDAO<Voucher> {
+
 }

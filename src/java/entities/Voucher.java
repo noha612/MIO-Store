@@ -30,11 +30,16 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "voucher")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Voucher.findAll", query = "SELECT v FROM Voucher v"),
-    @NamedQuery(name = "Voucher.findById", query = "SELECT v FROM Voucher v WHERE v.id = :id"),
-    @NamedQuery(name = "Voucher.findByName", query = "SELECT v FROM Voucher v WHERE v.name = :name"),
-    @NamedQuery(name = "Voucher.findByDiscountPercent", query = "SELECT v FROM Voucher v WHERE v.discountPercent = :discountPercent"),
-    @NamedQuery(name = "Voucher.findByDiscountAmount", query = "SELECT v FROM Voucher v WHERE v.discountAmount = :discountAmount"),
+    @NamedQuery(name = "Voucher.findAll", query = "SELECT v FROM Voucher v")
+    ,
+    @NamedQuery(name = "Voucher.findById", query = "SELECT v FROM Voucher v WHERE v.id = :id")
+    ,
+    @NamedQuery(name = "Voucher.findByName", query = "SELECT v FROM Voucher v WHERE v.name = :name")
+    ,
+    @NamedQuery(name = "Voucher.findByDiscountPercent", query = "SELECT v FROM Voucher v WHERE v.discountPercent = :discountPercent")
+    ,
+    @NamedQuery(name = "Voucher.findByDiscountAmount", query = "SELECT v FROM Voucher v WHERE v.discountAmount = :discountAmount")
+    ,
     @NamedQuery(name = "Voucher.findByDescription", query = "SELECT v FROM Voucher v WHERE v.description = :description")})
 public class Voucher implements Serializable {
 
@@ -141,5 +146,5 @@ public class Voucher implements Serializable {
     public String toString() {
         return "entities.Voucher[ id=" + id + " ]";
     }
-    
+
 }

@@ -30,8 +30,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "importingrecord")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Importingrecord.findAll", query = "SELECT i FROM Importingrecord i"),
-    @NamedQuery(name = "Importingrecord.findById", query = "SELECT i FROM Importingrecord i WHERE i.id = :id"),
+    @NamedQuery(name = "Importingrecord.findAll", query = "SELECT i FROM Importingrecord i")
+    ,
+    @NamedQuery(name = "Importingrecord.findById", query = "SELECT i FROM Importingrecord i WHERE i.id = :id")
+    ,
     @NamedQuery(name = "Importingrecord.findByDate", query = "SELECT i FROM Importingrecord i WHERE i.date = :date")})
 public class Importingrecord implements Serializable {
 
@@ -125,5 +127,5 @@ public class Importingrecord implements Serializable {
     public String toString() {
         return "entities.Importingrecord[ id=" + id + " ]";
     }
-    
+
 }

@@ -30,11 +30,16 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "post")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Post.findAll", query = "SELECT p FROM Post p"),
-    @NamedQuery(name = "Post.findById", query = "SELECT p FROM Post p WHERE p.id = :id"),
-    @NamedQuery(name = "Post.findByTitle", query = "SELECT p FROM Post p WHERE p.title = :title"),
-    @NamedQuery(name = "Post.findByContent", query = "SELECT p FROM Post p WHERE p.content = :content"),
-    @NamedQuery(name = "Post.findByDate", query = "SELECT p FROM Post p WHERE p.date = :date"),
+    @NamedQuery(name = "Post.findAll", query = "SELECT p FROM Post p")
+    ,
+    @NamedQuery(name = "Post.findById", query = "SELECT p FROM Post p WHERE p.id = :id")
+    ,
+    @NamedQuery(name = "Post.findByTitle", query = "SELECT p FROM Post p WHERE p.title = :title")
+    ,
+    @NamedQuery(name = "Post.findByContent", query = "SELECT p FROM Post p WHERE p.content = :content")
+    ,
+    @NamedQuery(name = "Post.findByDate", query = "SELECT p FROM Post p WHERE p.date = :date")
+    ,
     @NamedQuery(name = "Post.findByAuthorName", query = "SELECT p FROM Post p WHERE p.authorName = :authorName")})
 public class Post implements Serializable {
 
@@ -142,5 +147,5 @@ public class Post implements Serializable {
     public String toString() {
         return "entities.Post[ id=" + id + " ]";
     }
-    
+
 }

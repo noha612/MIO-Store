@@ -117,5 +117,5 @@ public class CustomerEntitiy implements Serializable {
     public String toString() {
         return "entities.CustomerEntitiy[ personID=" + personID + " ]";
     }
-    
+
 }

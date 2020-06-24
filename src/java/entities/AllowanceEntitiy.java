@@ -117,5 +117,5 @@ public class AllowanceEntitiy implements Serializable {
     public String toString() {
         return "entities.AllowanceEntitiy[ id=" + id + " ]";
     }
-    
+
 }

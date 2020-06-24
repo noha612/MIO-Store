@@ -18,7 +18,7 @@ import static repositories.BaseDAO.con;
  *
  * @author os_hoangpn
  */
-public class BookstorecardDAOImpl implements BookstorecardDAO{
+public class BookstorecardDAOImpl implements BookstorecardDAO {
 
     @Override
     public List<Bookstorecard> getAll() {
@@ -66,5 +66,5 @@ public class BookstorecardDAOImpl implements BookstorecardDAO{
     public void delete(Bookstorecard t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

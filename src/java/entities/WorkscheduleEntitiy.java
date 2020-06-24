@@ -100,5 +100,5 @@ public class WorkscheduleEntitiy implements Serializable {
     public String toString() {
         return "entities.WorkscheduleEntitiy[ id=" + id + " ]";
     }
-    
+
 }

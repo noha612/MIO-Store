@@ -11,6 +11,6 @@ import entities.Orderline;
  *
  * @author os_hoangpn
  */
-public interface OrderlineDAO extends BaseDAO<Orderline>{
-    
+public interface OrderlineDAO extends BaseDAO<Orderline> {
+
 }

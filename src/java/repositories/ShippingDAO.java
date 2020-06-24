@@ -10,5 +10,5 @@ package repositories;
  * @author os_hoangpn
  */
 public class ShippingDAO {
-    
+
 }

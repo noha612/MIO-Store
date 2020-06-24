@@ -26,7 +26,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "onsitebill")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Onsitebill.findAll", query = "SELECT o FROM Onsitebill o"),
+    @NamedQuery(name = "Onsitebill.findAll", query = "SELECT o FROM Onsitebill o")
+    ,
     @NamedQuery(name = "Onsitebill.findByBillID", query = "SELECT o FROM Onsitebill o WHERE o.billID = :billID")})
 public class Onsitebill implements Serializable {
 
@@ -97,5 +98,5 @@ public class Onsitebill implements Serializable {
     public String toString() {
         return "entities.Onsitebill[ billID=" + billID + " ]";
     }
-    
+
 }

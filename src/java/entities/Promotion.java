@@ -27,10 +27,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "promotion")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Promotion.findAll", query = "SELECT p FROM Promotion p"),
-    @NamedQuery(name = "Promotion.findById", query = "SELECT p FROM Promotion p WHERE p.id = :id"),
-    @NamedQuery(name = "Promotion.findByName", query = "SELECT p FROM Promotion p WHERE p.name = :name"),
-    @NamedQuery(name = "Promotion.findByPercent", query = "SELECT p FROM Promotion p WHERE p.percent = :percent"),
+    @NamedQuery(name = "Promotion.findAll", query = "SELECT p FROM Promotion p")
+    ,
+    @NamedQuery(name = "Promotion.findById", query = "SELECT p FROM Promotion p WHERE p.id = :id")
+    ,
+    @NamedQuery(name = "Promotion.findByName", query = "SELECT p FROM Promotion p WHERE p.name = :name")
+    ,
+    @NamedQuery(name = "Promotion.findByPercent", query = "SELECT p FROM Promotion p WHERE p.percent = :percent")
+    ,
     @NamedQuery(name = "Promotion.findByExpiredDate", query = "SELECT p FROM Promotion p WHERE p.expiredDate = :expiredDate")})
 public class Promotion implements Serializable {
 
@@ -122,5 +126,5 @@ public class Promotion implements Serializable {
     public String toString() {
         return "entities.Promotion[ id=" + id + " ]";
     }
-    
+
 }

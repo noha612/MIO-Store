@@ -117,5 +117,5 @@ public class VoucherEntitiy implements Serializable {
     public String toString() {
         return "entities.VoucherEntitiy[ id=" + id + " ]";
     }
-    
+
 }

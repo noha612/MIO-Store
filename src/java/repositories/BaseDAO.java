@@ -15,7 +15,9 @@ import java.util.Optional;
  * @author os_hoangpn
  */
 public interface BaseDAO<T> {
+
     Connection con = ConnectDB.openConnect();
+
     List<T> getAll();
 
     T get(int id);

@@ -92,5 +92,5 @@ public class ItemBookPK implements Serializable {
     public String toString() {
         return "entities.ItemBookPK[ itemID=" + itemID + ", bookID=" + bookID + ", itemID2=" + itemID2 + " ]";
     }
-    
+
 }

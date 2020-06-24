@@ -25,11 +25,16 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "onlineorder")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Onlineorder.findAll", query = "SELECT o FROM Onlineorder o"),
-    @NamedQuery(name = "Onlineorder.findByState", query = "SELECT o FROM Onlineorder o WHERE o.state = :state"),
-    @NamedQuery(name = "Onlineorder.findByCustomerID", query = "SELECT o FROM Onlineorder o WHERE o.customerID = :customerID"),
-    @NamedQuery(name = "Onlineorder.findByOrderID", query = "SELECT o FROM Onlineorder o WHERE o.orderID = :orderID"),
-    @NamedQuery(name = "Onlineorder.findByShippingID", query = "SELECT o FROM Onlineorder o WHERE o.shippingID = :shippingID"),
+    @NamedQuery(name = "Onlineorder.findAll", query = "SELECT o FROM Onlineorder o")
+    ,
+    @NamedQuery(name = "Onlineorder.findByState", query = "SELECT o FROM Onlineorder o WHERE o.state = :state")
+    ,
+    @NamedQuery(name = "Onlineorder.findByCustomerID", query = "SELECT o FROM Onlineorder o WHERE o.customerID = :customerID")
+    ,
+    @NamedQuery(name = "Onlineorder.findByOrderID", query = "SELECT o FROM Onlineorder o WHERE o.orderID = :orderID")
+    ,
+    @NamedQuery(name = "Onlineorder.findByShippingID", query = "SELECT o FROM Onlineorder o WHERE o.shippingID = :shippingID")
+    ,
     @NamedQuery(name = "Onlineorder.findByPaymentmethod", query = "SELECT o FROM Onlineorder o WHERE o.paymentmethod = :paymentmethod")})
 public class Onlineorder implements Serializable {
 
@@ -147,6 +152,4 @@ public class Onlineorder implements Serializable {
         return "Onlineorder{" + "state=" + state + ", customerID=" + customerID + ", orderID=" + orderID + ", shippingID=" + shippingID + ", paymentmethod=" + paymentmethod + ", shippingAddressID=" + shippingAddressID + ", voucherID=" + voucherID + '}';
     }
 
-
-    
 }

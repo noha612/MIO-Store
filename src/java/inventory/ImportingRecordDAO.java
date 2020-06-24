@@ -2,8 +2,8 @@ package inventory;
 
 public interface ImportingRecordDAO {
 
-	void add();
+    void add();
 
-	void update();
+    void update();
 
 }

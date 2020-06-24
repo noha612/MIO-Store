@@ -18,7 +18,7 @@ import static repositories.BaseDAO.con;
  *
  * @author os_hoangpn
  */
-public class WishlistDAOImpl implements WishlistDAO{
+public class WishlistDAOImpl implements WishlistDAO {
 
     @Override
     public List<Wishlist> getAll() {
@@ -66,5 +66,5 @@ public class WishlistDAOImpl implements WishlistDAO{
     public void delete(Wishlist t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

@@ -30,9 +30,12 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "bookstorecard")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Bookstorecard.findAll", query = "SELECT b FROM Bookstorecard b"),
-    @NamedQuery(name = "Bookstorecard.findById", query = "SELECT b FROM Bookstorecard b WHERE b.id = :id"),
-    @NamedQuery(name = "Bookstorecard.findByPoint", query = "SELECT b FROM Bookstorecard b WHERE b.point = :point"),
+    @NamedQuery(name = "Bookstorecard.findAll", query = "SELECT b FROM Bookstorecard b")
+    ,
+    @NamedQuery(name = "Bookstorecard.findById", query = "SELECT b FROM Bookstorecard b WHERE b.id = :id")
+    ,
+    @NamedQuery(name = "Bookstorecard.findByPoint", query = "SELECT b FROM Bookstorecard b WHERE b.point = :point")
+    ,
     @NamedQuery(name = "Bookstorecard.findByUsedPoint", query = "SELECT b FROM Bookstorecard b WHERE b.usedPoint = :usedPoint")})
 public class Bookstorecard implements Serializable {
 
@@ -113,5 +116,5 @@ public class Bookstorecard implements Serializable {
     public String toString() {
         return "entities.Bookstorecard[ id=" + id + " ]";
     }
-    
+
 }

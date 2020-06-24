@@ -30,7 +30,8 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "customer")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Customer.findAll", query = "SELECT c FROM Customer c"),
+    @NamedQuery(name = "Customer.findAll", query = "SELECT c FROM Customer c")
+    ,
     @NamedQuery(name = "Customer.findByPersonID", query = "SELECT c FROM Customer c WHERE c.personID = :personID")})
 public class Customer implements Serializable {
 
@@ -156,5 +157,5 @@ public class Customer implements Serializable {
     public String toString() {
         return "entities.Customer[ personID=" + personID + " ]";
     }
-    
+
 }

@@ -31,9 +31,12 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "branchstore")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Branchstore.findAll", query = "SELECT b FROM Branchstore b"),
-    @NamedQuery(name = "Branchstore.findById", query = "SELECT b FROM Branchstore b WHERE b.id = :id"),
-    @NamedQuery(name = "Branchstore.findByName", query = "SELECT b FROM Branchstore b WHERE b.name = :name"),
+    @NamedQuery(name = "Branchstore.findAll", query = "SELECT b FROM Branchstore b")
+    ,
+    @NamedQuery(name = "Branchstore.findById", query = "SELECT b FROM Branchstore b WHERE b.id = :id")
+    ,
+    @NamedQuery(name = "Branchstore.findByName", query = "SELECT b FROM Branchstore b WHERE b.name = :name")
+    ,
     @NamedQuery(name = "Branchstore.findByDescription", query = "SELECT b FROM Branchstore b WHERE b.description = :description")})
 public class Branchstore implements Serializable {
 
@@ -125,5 +128,5 @@ public class Branchstore implements Serializable {
     public String toString() {
         return "entities.Branchstore[ id=" + id + " ]";
     }
-    
+
 }

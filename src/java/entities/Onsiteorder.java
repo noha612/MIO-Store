@@ -30,7 +30,8 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "onsiteorder")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Onsiteorder.findAll", query = "SELECT o FROM Onsiteorder o"),
+    @NamedQuery(name = "Onsiteorder.findAll", query = "SELECT o FROM Onsiteorder o")
+    ,
     @NamedQuery(name = "Onsiteorder.findByOrderID", query = "SELECT o FROM Onsiteorder o WHERE o.orderID = :orderID")})
 public class Onsiteorder implements Serializable {
 
@@ -134,5 +135,5 @@ public class Onsiteorder implements Serializable {
     public String toString() {
         return "entities.Onsiteorder[ orderID=" + orderID + " ]";
     }
-    
+
 }

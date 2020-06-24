@@ -11,6 +11,6 @@ import entities.Shippingaddress;
  *
  * @author os_hoangpn
  */
-public interface ShippingAddressDAO extends BaseDAO<Shippingaddress>{
-    
+public interface ShippingAddressDAO extends BaseDAO<Shippingaddress> {
+
 }

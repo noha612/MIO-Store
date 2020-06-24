@@ -25,7 +25,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "qrcode")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Qrcode.findAll", query = "SELECT q FROM Qrcode q"),
+    @NamedQuery(name = "Qrcode.findAll", query = "SELECT q FROM Qrcode q")
+    ,
     @NamedQuery(name = "Qrcode.findByPaymentID", query = "SELECT q FROM Qrcode q WHERE q.paymentID = :paymentID")})
 public class Qrcode implements Serializable {
 
@@ -85,5 +86,5 @@ public class Qrcode implements Serializable {
     public String toString() {
         return "entities.Qrcode[ paymentID=" + paymentID + " ]";
     }
-    
+
 }

@@ -80,5 +80,5 @@ public class CartEntitiy implements Serializable {
     public String toString() {
         return "entities.CartEntitiy[ id=" + id + " ]";
     }
-    
+
 }

@@ -1,8 +1,8 @@
 package shipping;
 
 public enum Transport {
-	BIKE,
-	CAR,
-	AIRPLANE,
-	TRAIN
+    BIKE,
+    CAR,
+    AIRPLANE,
+    TRAIN
 }

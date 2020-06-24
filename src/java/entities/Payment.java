@@ -31,9 +31,12 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "payment")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Payment.findAll", query = "SELECT p FROM Payment p"),
-    @NamedQuery(name = "Payment.findById", query = "SELECT p FROM Payment p WHERE p.id = :id"),
-    @NamedQuery(name = "Payment.findByAmount", query = "SELECT p FROM Payment p WHERE p.amount = :amount"),
+    @NamedQuery(name = "Payment.findAll", query = "SELECT p FROM Payment p")
+    ,
+    @NamedQuery(name = "Payment.findById", query = "SELECT p FROM Payment p WHERE p.id = :id")
+    ,
+    @NamedQuery(name = "Payment.findByAmount", query = "SELECT p FROM Payment p WHERE p.amount = :amount")
+    ,
     @NamedQuery(name = "Payment.findByMethod", query = "SELECT p FROM Payment p WHERE p.method = :method")})
 public class Payment implements Serializable {
 
@@ -144,5 +147,5 @@ public class Payment implements Serializable {
     public String toString() {
         return "entities.Payment[ id=" + id + " ]";
     }
-    
+
 }

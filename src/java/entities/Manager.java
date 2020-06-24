@@ -25,8 +25,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "manager")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Manager.findAll", query = "SELECT m FROM Manager m"),
-    @NamedQuery(name = "Manager.findByLevel", query = "SELECT m FROM Manager m WHERE m.level = :level"),
+    @NamedQuery(name = "Manager.findAll", query = "SELECT m FROM Manager m")
+    ,
+    @NamedQuery(name = "Manager.findByLevel", query = "SELECT m FROM Manager m WHERE m.level = :level")
+    ,
     @NamedQuery(name = "Manager.findByPersonID", query = "SELECT m FROM Manager m WHERE m.personID = :personID")})
 public class Manager implements Serializable {
 
@@ -96,5 +98,5 @@ public class Manager implements Serializable {
     public String toString() {
         return "entities.Manager[ personID=" + personID + " ]";
     }
-    
+
 }

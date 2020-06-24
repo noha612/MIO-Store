@@ -29,10 +29,14 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "membershiptype")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Membershiptype.findAll", query = "SELECT m FROM Membershiptype m"),
-    @NamedQuery(name = "Membershiptype.findById", query = "SELECT m FROM Membershiptype m WHERE m.id = :id"),
-    @NamedQuery(name = "Membershiptype.findByName", query = "SELECT m FROM Membershiptype m WHERE m.name = :name"),
-    @NamedQuery(name = "Membershiptype.findByDescription", query = "SELECT m FROM Membershiptype m WHERE m.description = :description"),
+    @NamedQuery(name = "Membershiptype.findAll", query = "SELECT m FROM Membershiptype m")
+    ,
+    @NamedQuery(name = "Membershiptype.findById", query = "SELECT m FROM Membershiptype m WHERE m.id = :id")
+    ,
+    @NamedQuery(name = "Membershiptype.findByName", query = "SELECT m FROM Membershiptype m WHERE m.name = :name")
+    ,
+    @NamedQuery(name = "Membershiptype.findByDescription", query = "SELECT m FROM Membershiptype m WHERE m.description = :description")
+    ,
     @NamedQuery(name = "Membershiptype.findByCondition", query = "SELECT m FROM Membershiptype m WHERE m.condition = :condition")})
 public class Membershiptype implements Serializable {
 
@@ -123,5 +127,5 @@ public class Membershiptype implements Serializable {
     public String toString() {
         return "entities.Membershiptype[ id=" + id + " ]";
     }
-    
+
 }

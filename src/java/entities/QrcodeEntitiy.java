@@ -67,5 +67,5 @@ public class QrcodeEntitiy implements Serializable {
     public String toString() {
         return "entities.QrcodeEntitiy[ paymentID=" + paymentID + " ]";
     }
-    
+
 }

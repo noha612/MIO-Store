@@ -142,14 +142,14 @@ public class RegisterServlet extends HttpServlet {
             person.getContactInforID().setId(contactinforID);
             person.getFullNameID().setId(fullnameID);
             System.out.println(person.toString());
-            
+
             int personID = personDAOImpl.save(person);
-            
+
             int bookstorecardID = new BookstorecardDAOImpl().save(new Bookstorecard());
             int membershiptypeID = new MembershiptypeDAOImpl().save(new Membershiptype());
             int wishlistID = new WishlistDAOImpl().save(new Wishlist());
             int cartID = new CartDAOImpl().save(new Cart());
-            
+
             CustomerDAOImpl customerDAOImpl = new CustomerDAOImpl();
             Customer customer = new Customer();
             customer.setPersonID(personID);
@@ -161,7 +161,7 @@ public class RegisterServlet extends HttpServlet {
             customer.getMembershipTypeID().setId(membershiptypeID);
             customer.setWishlistID(new Wishlist());
             customer.getWishlistID().setId(wishlistID);
-            
+
             customerDAOImpl.save(customer);
             response.sendRedirect(redirectUrl.format(redirectUrl, "Success", "Register successful!"));
         }

@@ -78,11 +78,11 @@ public class OnlineOrderServlet extends HttpServlet {
         try {
             String redirectUrl = "result.jsp?status=%s&detail=%s";
             OnlineOrderDAOImpl aOImpl = new OnlineOrderDAOImpl();
-            String orderID=request.getParameter("orderID");
+            String orderID = request.getParameter("orderID");
             Onlineorder a = aOImpl.searchOnlineOrders(Integer.parseInt(orderID));
             a.setState(request.getParameter("method").toString());
             aOImpl.update(a);
-            response.sendRedirect("onlineorder.jsp?orderID="+request.getParameter("orderID"));
+            response.sendRedirect("onlineorder.jsp?orderID=" + request.getParameter("orderID"));
         } catch (SQLException ex) {
             Logger.getLogger(OnlineOrderServlet.class.getName()).log(Level.SEVERE, null, ex);
         }

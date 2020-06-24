@@ -29,9 +29,12 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "author")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Author.findAll", query = "SELECT a FROM Author a"),
-    @NamedQuery(name = "Author.findById", query = "SELECT a FROM Author a WHERE a.id = :id"),
-    @NamedQuery(name = "Author.findByName", query = "SELECT a FROM Author a WHERE a.name = :name"),
+    @NamedQuery(name = "Author.findAll", query = "SELECT a FROM Author a")
+    ,
+    @NamedQuery(name = "Author.findById", query = "SELECT a FROM Author a WHERE a.id = :id")
+    ,
+    @NamedQuery(name = "Author.findByName", query = "SELECT a FROM Author a WHERE a.name = :name")
+    ,
     @NamedQuery(name = "Author.findByDescription", query = "SELECT a FROM Author a WHERE a.description = :description")})
 public class Author implements Serializable {
 
@@ -112,5 +115,5 @@ public class Author implements Serializable {
     public String toString() {
         return "entities.Author[ id=" + id + " ]";
     }
-    
+
 }

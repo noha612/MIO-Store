@@ -11,6 +11,6 @@ import entities.Bookstorecard;
  *
  * @author os_hoangpn
  */
-public interface BookstorecardDAO extends BaseDAO<Bookstorecard>{
-    
+public interface BookstorecardDAO extends BaseDAO<Bookstorecard> {
+
 }

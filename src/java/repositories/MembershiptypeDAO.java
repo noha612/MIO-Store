@@ -11,6 +11,6 @@ import entities.Membershiptype;
  *
  * @author os_hoangpn
  */
-public interface MembershiptypeDAO extends BaseDAO<Membershiptype>{
-    
+public interface MembershiptypeDAO extends BaseDAO<Membershiptype> {
+
 }

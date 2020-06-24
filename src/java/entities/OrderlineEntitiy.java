@@ -107,5 +107,5 @@ public class OrderlineEntitiy implements Serializable {
     public String toString() {
         return "entities.OrderlineEntitiy[ id=" + id + " ]";
     }
-    
+
 }

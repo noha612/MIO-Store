@@ -2,37 +2,37 @@ package customer;
 
 public class MIOCard {
 
-	private int ID;
-	private Long point;
-	private Long usedPoint;
+    private int ID;
+    private Long point;
+    private Long usedPoint;
 
-	public Long getPoint() {
-		return this.point;
-	}
+    public Long getPoint() {
+        return this.point;
+    }
 
-	/**
-	 * 
-	 * @param point
-	 */
-	public void setPoint(Long point) {
-		this.point = point;
-	}
+    /**
+     *
+     * @param point
+     */
+    public void setPoint(Long point) {
+        this.point = point;
+    }
 
-	public Long getUsedPoint() {
-		return this.usedPoint;
-	}
+    public Long getUsedPoint() {
+        return this.usedPoint;
+    }
 
-	/**
-	 * 
-	 * @param usedPoint
-	 */
-	public void setUsedPoint(Long usedPoint) {
-		this.usedPoint = usedPoint;
-	}
+    /**
+     *
+     * @param usedPoint
+     */
+    public void setUsedPoint(Long usedPoint) {
+        this.usedPoint = usedPoint;
+    }
 
-	public void display() {
-		// TODO - implement MIOCard.display
-		throw new UnsupportedOperationException();
-	}
+    public void display() {
+        // TODO - implement MIOCard.display
+        throw new UnsupportedOperationException();
+    }
 
 }

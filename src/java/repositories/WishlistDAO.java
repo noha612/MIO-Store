@@ -11,6 +11,6 @@ import entities.Wishlist;
  *
  * @author os_hoangpn
  */
-public interface WishlistDAO extends BaseDAO<Wishlist>{
-    
+public interface WishlistDAO extends BaseDAO<Wishlist> {
+
 }

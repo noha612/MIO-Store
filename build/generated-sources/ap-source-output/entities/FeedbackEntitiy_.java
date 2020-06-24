@@ -4,9 +4,9 @@ import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-06-17T11:23:13")
+@Generated(value = "EclipseLink-2.5.2.v20140319-rNA", date = "2020-06-17T11:23:13")
 @StaticMetamodel(FeedbackEntitiy.class)
-public class FeedbackEntitiy_ { 
+public class FeedbackEntitiy_ {
 
     public static volatile SingularAttribute<FeedbackEntitiy, Integer> itemID;
     public static volatile SingularAttribute<FeedbackEntitiy, Integer> customerPersonID;

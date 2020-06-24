@@ -118,5 +118,5 @@ public class CpuEntitiy implements Serializable {
     public String toString() {
         return "entities.CpuEntitiy[ id2=" + id2 + " ]";
     }
-    
+
 }

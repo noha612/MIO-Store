@@ -95,7 +95,7 @@ public class PersonDAOImpl implements PersonDAO {
             Fullname f = new Fullname();
             f.setFirstName(rs.getString("firstname"));
             f.setMiddleName(rs.getString("middlename"));
-            f.setLastName(rs.getString("lastname"));            
+            f.setLastName(rs.getString("lastname"));
             p.setFullNameID(f);
             return p;
         } catch (SQLException ex) {
@@ -103,6 +103,7 @@ public class PersonDAOImpl implements PersonDAO {
             return null;
         }
     }
+
     public static void main(String[] args) {
         PersonDAOImpl aOImpl = new PersonDAOImpl();
         System.out.println(aOImpl.getPersonByAccountID(26));

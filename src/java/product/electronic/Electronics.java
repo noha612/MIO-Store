@@ -4,9 +4,9 @@ import product.*;
 
 public class Electronics extends Product {
 
-	private int Id;
-	private String desc;
-	private String type;
-	private Brand brand;
+    private int Id;
+    private String desc;
+    private String type;
+    private Brand brand;
 
 }

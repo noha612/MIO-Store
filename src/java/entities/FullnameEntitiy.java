@@ -100,5 +100,5 @@ public class FullnameEntitiy implements Serializable {
     public String toString() {
         return "entities.FullnameEntitiy[ id=" + id + " ]";
     }
-    
+
 }

@@ -11,6 +11,6 @@ import entities.Address;
  *
  * @author os_hoangpn
  */
-public interface AddressDAO extends BaseDAO<Address>{
-    
+public interface AddressDAO extends BaseDAO<Address> {
+
 }

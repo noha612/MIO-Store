@@ -132,5 +132,5 @@ public class NotificationEntitiy implements Serializable {
     public String toString() {
         return "entities.NotificationEntitiy[ id=" + id + " ]";
     }
-    
+
 }

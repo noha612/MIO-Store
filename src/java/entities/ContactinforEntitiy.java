@@ -106,5 +106,5 @@ public class ContactinforEntitiy implements Serializable {
     public String toString() {
         return "entities.ContactinforEntitiy[ id=" + id + " ]";
     }
-    
+
 }

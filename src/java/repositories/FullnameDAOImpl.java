@@ -71,6 +71,7 @@ public class FullnameDAOImpl implements FullnameDAO {
     public void delete(Fullname t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
     public static void main(String[] args) {
         Fullname f = new Fullname();
         f.setFirstName("x");

@@ -146,5 +146,5 @@ public class ImportingrecordEntitiy implements Serializable {
     public String toString() {
         return "entities.ImportingrecordEntitiy[ id=" + id + " ]";
     }
-    
+
 }

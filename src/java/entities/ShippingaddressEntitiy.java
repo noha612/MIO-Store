@@ -80,5 +80,5 @@ public class ShippingaddressEntitiy implements Serializable {
     public String toString() {
         return "entities.ShippingaddressEntitiy[ id=" + id + " ]";
     }
-    
+
 }

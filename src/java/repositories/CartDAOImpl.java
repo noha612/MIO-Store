@@ -20,7 +20,7 @@ import static repositories.BaseDAO.con;
  *
  * @author os_hoangpn
  */
-public class CartDAOImpl implements CartDAO{
+public class CartDAOImpl implements CartDAO {
 
     @Override
     public Cart findCartByCustomer(String customerId) {
@@ -76,7 +76,7 @@ public class CartDAOImpl implements CartDAO{
 
     @Override
     public void addNewItemToCart(int ItemID, int CartID) {
-        System.out.println(ItemID+" "+CartID);
+        System.out.println(ItemID + " " + CartID);
         String sql = "INSERT INTO book_store.cart_item (CartID, ItemID)"
                 + "VALUES(?,?);";
         try {
@@ -89,5 +89,5 @@ public class CartDAOImpl implements CartDAO{
             Logger.getLogger(AccountDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
 }

@@ -10,5 +10,5 @@ package databaseconfig;
  * @author os_hoangpn
  */
 public class CurrencyConfig {
-    
+
 }

@@ -139,5 +139,5 @@ public class OnlineorderEntitiy implements Serializable {
     public String toString() {
         return "entities.OnlineorderEntitiy[ orderID=" + orderID + " ]";
     }
-    
+
 }

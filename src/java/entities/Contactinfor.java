@@ -31,9 +31,12 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "contactinfor")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Contactinfor.findAll", query = "SELECT c FROM Contactinfor c"),
-    @NamedQuery(name = "Contactinfor.findById", query = "SELECT c FROM Contactinfor c WHERE c.id = :id"),
-    @NamedQuery(name = "Contactinfor.findByPhoneNumber", query = "SELECT c FROM Contactinfor c WHERE c.phoneNumber = :phoneNumber"),
+    @NamedQuery(name = "Contactinfor.findAll", query = "SELECT c FROM Contactinfor c")
+    ,
+    @NamedQuery(name = "Contactinfor.findById", query = "SELECT c FROM Contactinfor c WHERE c.id = :id")
+    ,
+    @NamedQuery(name = "Contactinfor.findByPhoneNumber", query = "SELECT c FROM Contactinfor c WHERE c.phoneNumber = :phoneNumber")
+    ,
     @NamedQuery(name = "Contactinfor.findByEmail", query = "SELECT c FROM Contactinfor c WHERE c.email = :email")})
 public class Contactinfor implements Serializable {
 
@@ -125,5 +128,5 @@ public class Contactinfor implements Serializable {
     public String toString() {
         return "entities.Contactinfor[ id=" + id + " ]";
     }
-    
+
 }

@@ -25,7 +25,7 @@ public class ConnectDB {
     /**
      * Check Driver connect to MySQL
      */
-    public static Connection openConnect(){
+    public static Connection openConnect() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException ex) {
@@ -50,7 +50,7 @@ public class ConnectDB {
         return connect;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(ConnectDB.openConnect());
     }
 }

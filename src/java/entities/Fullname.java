@@ -29,10 +29,14 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "fullname")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Fullname.findAll", query = "SELECT f FROM Fullname f"),
-    @NamedQuery(name = "Fullname.findById", query = "SELECT f FROM Fullname f WHERE f.id = :id"),
-    @NamedQuery(name = "Fullname.findByFirstName", query = "SELECT f FROM Fullname f WHERE f.firstName = :firstName"),
-    @NamedQuery(name = "Fullname.findByMiddleName", query = "SELECT f FROM Fullname f WHERE f.middleName = :middleName"),
+    @NamedQuery(name = "Fullname.findAll", query = "SELECT f FROM Fullname f")
+    ,
+    @NamedQuery(name = "Fullname.findById", query = "SELECT f FROM Fullname f WHERE f.id = :id")
+    ,
+    @NamedQuery(name = "Fullname.findByFirstName", query = "SELECT f FROM Fullname f WHERE f.firstName = :firstName")
+    ,
+    @NamedQuery(name = "Fullname.findByMiddleName", query = "SELECT f FROM Fullname f WHERE f.middleName = :middleName")
+    ,
     @NamedQuery(name = "Fullname.findByLastName", query = "SELECT f FROM Fullname f WHERE f.lastName = :lastName")})
 public class Fullname implements Serializable {
 
@@ -123,6 +127,5 @@ public class Fullname implements Serializable {
     public String toString() {
         return "Fullname{" + "id=" + id + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName=" + lastName + ", personList=" + personList + '}';
     }
-    
-    
+
 }

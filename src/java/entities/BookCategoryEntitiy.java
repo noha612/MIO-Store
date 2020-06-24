@@ -70,5 +70,5 @@ public class BookCategoryEntitiy implements Serializable {
     public String toString() {
         return "entities.BookCategoryEntitiy[ bookID=" + bookID + " ]";
     }
-    
+
 }

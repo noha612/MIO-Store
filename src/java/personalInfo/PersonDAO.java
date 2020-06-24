@@ -2,10 +2,10 @@ package personalInfo;
 
 public interface PersonDAO {
 
-	void create();
+    void create();
 
-	void findByUsername();
+    void findByUsername();
 
-	void edit();
+    void edit();
 
 }

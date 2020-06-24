@@ -7,9 +7,9 @@ import product.electronic.Brand;
 
 public class Phone extends Product {
 
-	private int ID;
-	private Brand brand;
-	private CPU cpu;
-	private RAM ram;
+    private int ID;
+    private Brand brand;
+    private CPU cpu;
+    private RAM ram;
 
 }

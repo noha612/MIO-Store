@@ -106,5 +106,5 @@ public class BranchstoreEntitiy implements Serializable {
     public String toString() {
         return "entities.BranchstoreEntitiy[ id=" + id + " ]";
     }
-    
+
 }

@@ -34,10 +34,14 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "employee")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Employee.findAll", query = "SELECT e FROM Employee e"),
-    @NamedQuery(name = "Employee.findByPosition", query = "SELECT e FROM Employee e WHERE e.position = :position"),
-    @NamedQuery(name = "Employee.findBySalary", query = "SELECT e FROM Employee e WHERE e.salary = :salary"),
-    @NamedQuery(name = "Employee.findByStartDate", query = "SELECT e FROM Employee e WHERE e.startDate = :startDate"),
+    @NamedQuery(name = "Employee.findAll", query = "SELECT e FROM Employee e")
+    ,
+    @NamedQuery(name = "Employee.findByPosition", query = "SELECT e FROM Employee e WHERE e.position = :position")
+    ,
+    @NamedQuery(name = "Employee.findBySalary", query = "SELECT e FROM Employee e WHERE e.salary = :salary")
+    ,
+    @NamedQuery(name = "Employee.findByStartDate", query = "SELECT e FROM Employee e WHERE e.startDate = :startDate")
+    ,
     @NamedQuery(name = "Employee.findByPersonID", query = "SELECT e FROM Employee e WHERE e.personID = :personID")})
 public class Employee implements Serializable {
 
@@ -161,5 +165,5 @@ public class Employee implements Serializable {
     public String toString() {
         return "entities.Employee[ personID=" + personID + " ]";
     }
-    
+
 }

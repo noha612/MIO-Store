@@ -2,12 +2,12 @@ package product;
 
 public interface ProductDAO {
 
-	void add();
+    void add();
 
-	void getById();
+    void getById();
 
-	void update();
+    void update();
 
-	void delete();
+    void delete();
 
 }

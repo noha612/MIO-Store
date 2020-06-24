@@ -100,5 +100,5 @@ public class AccountEntitiy implements Serializable {
     public String toString() {
         return "entities.AccountEntitiy[ id=" + id + " ]";
     }
-    
+
 }

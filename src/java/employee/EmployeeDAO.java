@@ -2,8 +2,8 @@ package employee;
 
 public interface EmployeeDAO {
 
-	void create();
+    void create();
 
-	void update();
+    void update();
 
 }

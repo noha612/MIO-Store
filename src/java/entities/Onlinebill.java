@@ -26,8 +26,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "onlinebill")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Onlinebill.findAll", query = "SELECT o FROM Onlinebill o"),
-    @NamedQuery(name = "Onlinebill.findByPaymentState", query = "SELECT o FROM Onlinebill o WHERE o.paymentState = :paymentState"),
+    @NamedQuery(name = "Onlinebill.findAll", query = "SELECT o FROM Onlinebill o")
+    ,
+    @NamedQuery(name = "Onlinebill.findByPaymentState", query = "SELECT o FROM Onlinebill o WHERE o.paymentState = :paymentState")
+    ,
     @NamedQuery(name = "Onlinebill.findByBillID", query = "SELECT o FROM Onlinebill o WHERE o.billID = :billID")})
 public class Onlinebill implements Serializable {
 
@@ -108,5 +110,5 @@ public class Onlinebill implements Serializable {
     public String toString() {
         return "entities.Onlinebill[ billID=" + billID + " ]";
     }
-    
+
 }

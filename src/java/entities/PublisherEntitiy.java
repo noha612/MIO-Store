@@ -90,5 +90,5 @@ public class PublisherEntitiy implements Serializable {
     public String toString() {
         return "entities.PublisherEntitiy[ id=" + id + " ]";
     }
-    
+
 }

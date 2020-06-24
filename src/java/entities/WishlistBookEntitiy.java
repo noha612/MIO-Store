@@ -70,5 +70,5 @@ public class WishlistBookEntitiy implements Serializable {
     public String toString() {
         return "entities.WishlistBookEntitiy[ bookID=" + bookID + " ]";
     }
-    
+
 }
